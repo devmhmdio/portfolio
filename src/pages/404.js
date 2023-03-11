@@ -32,9 +32,9 @@ const NotFound = () => {
               />
               <div>
                 <Link href="/">
-                  <a className="btn btn-large">
+                  <span className="btn btn-large">
                     <span>Back to home</span>
-                  </a>
+                  </span>
                 </Link>
               </div>
             </div>

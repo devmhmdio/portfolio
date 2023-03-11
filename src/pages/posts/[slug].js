@@ -73,16 +73,16 @@ const Posts = ({ posts, hasMore, categories, recentPosts }) => {
               <div className="flex gap-3 pt-10 text-center">
                 {page !== "1" && (
                   <Link href={`/posts/${String(parseInt(page) - 1)}`}>
-                    <a className="btn btn-small">
+                    <span className="btn btn-small">
                       <span>Prev</span>
-                    </a>
+                    </span>
                   </Link>
                 )}
                 {hasMore && (
                   <Link href={`/posts/${String(parseInt(page) + 1)}`}>
-                    <a className="btn btn-small">
+                    <span className="btn btn-small">
                       <span>Next</span>
-                    </a>
+                    </span>
                   </Link>
                 )}
               </div>
@@ -104,7 +104,7 @@ const Posts = ({ posts, hasMore, categories, recentPosts }) => {
                     {uniqueCategories.map((category, i) => (
                       <li key={i}>
                         <Link href={`/category/${createSlug(category)}/1`}>
-                          <a className="clearfix hover:text-primary">
+                          <span className="clearfix hover:text-primary">
                             {category}
                             <span className="float-right">
                               (
@@ -114,7 +114,7 @@ const Posts = ({ posts, hasMore, categories, recentPosts }) => {
                               }
                               )
                             </span>
-                          </a>
+                          </span>
                         </Link>
                       </li>
                     ))}
@@ -136,9 +136,9 @@ const Posts = ({ posts, hasMore, categories, recentPosts }) => {
                       <li key={index} className="mb-4 last:mb-0">
                         <p className="mb-0">
                           <Link href={`/postdetails/${post.slug}`}>
-                            <a className="text-heading no-underline hover:text-primary hover:underline">
+                            <span className="text-heading no-underline hover:text-primary hover:underline">
                               {post.title}{" "}
-                            </a>
+                            </span>
                           </Link>
                         </p>
                         <small className="text-body">

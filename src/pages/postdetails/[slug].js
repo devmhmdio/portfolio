@@ -80,7 +80,7 @@ const PostPage = ({ title, date, cover, category, content }) => {
                       className="after:content-[','] last:after:hidden"
                     >
                       <Link href={`/category/${createSlug(cat)}/1`}>
-                        <a className="text-body hover:text-primary">{cat}</a>
+                        <span className="text-body hover:text-primary">{cat}</span>
                       </Link>
                     </span>
                   ))}

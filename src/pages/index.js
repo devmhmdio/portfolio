@@ -12,11 +12,6 @@ const index = ({ pages }) => {
           <div className="header-inner flex items-center justify-between py-3">
             <Logo url="/" />
             <div className="header-button hidden lg:block">
-              <Link href="https://themeforest.net/user/nuclear_themes/portfolio">
-                <a className="btn">
-                  <span>Buy Now</span>
-                </a>
-              </Link>
             </div>
           </div>
         </div>
@@ -59,7 +54,7 @@ const index = ({ pages }) => {
               {pages.map((page) => (
                 <div className="col-span-1" key={page.id}>
                   <Link href={page.path}>
-                    <a className="card hovercard block overflow-hidden">
+                    <span className="card hovercard block overflow-hidden">
                       <div className="imagebox overflow-hidden rounded">
                         <Image
                           loader={imageLoader}
@@ -71,13 +66,13 @@ const index = ({ pages }) => {
                         />
                       </div>
                       <h5 className="py-3 text-center">{page.title}</h5>
-                    </a>
+                    </span>
                   </Link>
                 </div>
               ))}
               <div className="col-span-1">
                 <Link href="/">
-                  <a className="card hovercard block overflow-hidden">
+                  <span className="card hovercard block overflow-hidden">
                     <div className="imagebox overflow-hidden rounded">
                       <Image
                         loader={imageLoader}
@@ -89,7 +84,7 @@ const index = ({ pages }) => {
                       />
                     </div>
                     <h5 className="py-3 text-center">More Demos Coming Soon</h5>
-                  </a>
+                  </span>
                 </Link>
               </div>
             </div>
@@ -98,18 +93,6 @@ const index = ({ pages }) => {
         {/* End demos section */}
 
       </main>
-      <footer className="footer bg-grey-darken">
-        <div className="contianer mx-auto">
-          <p className="mb-0 py-4 text-center">
-            &copy; {new Date().getFullYear()}, All right reserved
-            <Link href="/">
-              <a className="pl-1.5 font-medium text-heading no-underline hover:text-primary">
-                NuclearThemes
-              </a>
-            </Link>
-          </p>
-        </div>
-      </footer>
     </div>
   );
 };

@@ -23,9 +23,9 @@ const Breadcrumb = ({ title, paths, blurred }) => {
                                     >
                                         {path.link ? (
                                             <Link href={path.link}>
-                                                <a className="text-heading hover:text-primary">
+                                                <span className="text-heading hover:text-primary">
                                                     {path.name}
-                                                </a>
+                                                </span>
                                             </Link>
                                         ) : (
                                             path.name

@@ -1,7 +1,7 @@
 import { http } from "./http";
 
 const getInformation = async () => {
-  let res = await http.get(`/information.json`);
+  let res = await http.get(`../../public/api/information.json`);
   return res.data;
 };
 

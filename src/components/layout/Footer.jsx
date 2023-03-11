@@ -18,9 +18,9 @@ const Footer = () => {
           <p className="mb-0 w-full md:w-auto">
             &copy; {new Date().getFullYear()}, All right reserved
             <Link href="/">
-              <a className="pl-1.5 font-medium text-heading no-underline hover:text-primary">
+              <span className="pl-1.5 font-medium text-heading no-underline hover:text-primary">
                 NuclearThemes
-              </a>
+              </span>
             </Link>
           </p>
         </div>

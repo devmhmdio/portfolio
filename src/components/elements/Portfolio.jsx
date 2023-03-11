@@ -49,12 +49,12 @@ const Portfolio = ({
           ) : null}
           {url ? (
             <Link href={url}>
-              <a
+              <span
                 target="_blank"
                 className="inline-flex h-10 min-h-0 w-10 items-center justify-center rounded-full bg-primary p-0 text-center text-lg text-grey"
               >
                 <RiExternalLinkLine />
-              </a>
+              </span>
             </Link>
           ) : null}
         </div>
