@@ -1,127 +1,19 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Link as ScrollLink, Element as Section } from "react-scroll";
-import { Logo, SectionHeading } from "../components/utils";
-import { imageLoader } from "../lib/utils";
+import Head from "next/head";
+import { HeroSection } from "../components/containers";
+import { Layout2 } from "../components/layout";
 
-const index = ({ pages }) => {
+const Homepage3 = () => {
   return (
-    <div className="previewpage bg-grey-darken">
-      <header className="header relative z-50 border-b border-white border-opacity-10">
-        <div className="container mx-auto">
-          <div className="header-inner flex items-center justify-between py-3">
-            <Logo url="/" />
-            <div className="header-button hidden lg:block">
-            </div>
-          </div>
-        </div>
-      </header>
-      <main className="previewmain bg-grey">
-        <div className="herosection herosection-bg ">
-          <div className="herosection-inner flex min-h-[50vh] items-center bg-grey-darken bg-opacity-90">
-            <div className="container mx-auto">
-              <div className="herosection-content py-20 text-center">
-                <h1 className="text-primary">
-                  Portfolio - Mohammed Rafique
-                </h1>
-                <p className="lead">
-                  Mohammed is a creative full stack developer working with NodeJS, ReactJS, NestJS, NextJS, MongoDB, PSQL, Docker and Blockchain.
-                </p>
-                <ScrollLink
-                  activeClass="active"
-                  to="section-demos"
-                  spy={true}
-                  smooth="easeInQuad"
-                  offset={0}
-                  duration={1000}
-                  className="btn btn-large mt-4"
-                >
-                  <span className="pl-2">View Demos</span>
-                </ScrollLink>
-              </div>
-            </div>
-          </div>
-        </div>
+    <Layout2>
+      <Head>
+        <title>Portfolio - Mohammed Rafique</title>
+      </Head>
 
-        {/* Start demos section */}
-        <Section
-          name="section-demos"
-          className="demos-section py-24 lg:py-28 xl:py-32"
-        >
-          <div className="container mx-auto">
-            <SectionHeading title="Demos" watermark="Demos" />
-            <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-              {pages.map((page) => (
-                <div className="col-span-1" key={page.id}>
-                  <Link href={page.path}>
-                    <span className="card hovercard block overflow-hidden">
-                      <div className="imagebox overflow-hidden rounded">
-                        <Image
-                          loader={imageLoader}
-                          unoptimized={true}
-                          src={page.image}
-                          height={337}
-                          width={650}
-                          alt={page.title}
-                        />
-                      </div>
-                      <h5 className="py-3 text-center">{page.title}</h5>
-                    </span>
-                  </Link>
-                </div>
-              ))}
-              <div className="col-span-1">
-                <Link href="/">
-                  <span className="card hovercard block overflow-hidden">
-                    <div className="imagebox overflow-hidden rounded">
-                      <Image
-                        loader={imageLoader}
-                        unoptimized={true}
-                        src="/images/demo/coming-soon.jpg"
-                        height={337}
-                        width={650}
-                        alt="Comming Soon"
-                      />
-                    </div>
-                    <h5 className="py-3 text-center">More Demos Coming Soon</h5>
-                  </span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </Section>
-        {/* End demos section */}
-
-      </main>
-    </div>
+      {/* Start Hero Section */}
+      <HeroSection scroll={false} />
+      {/* End Hero Section */}
+    </Layout2>
   );
 };
 
-export async function getStaticProps() {
-  return {
-    props: {
-      pages: [
-        {
-          id: 1,
-          title: "Home Version 1",
-          image: "/images/demo/homepage-1.jpg",
-          path: "/homepage1",
-        },
-        {
-          id: 2,
-          title: "Home Version 2",
-          image: "/images/demo/homepage-2.jpg",
-          path: "/homepage2",
-        },
-        {
-          id: 3,
-          title: "Home Version 3",
-          image: "/images/demo/homepage-3.jpg",
-          path: "/homepage3",
-        },
-      ],
-    },
-  };
-}
-
-export default index;
+export default Homepage3;
