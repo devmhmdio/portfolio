@@ -27,11 +27,10 @@ const index = ({ pages }) => {
             <div className="container mx-auto">
               <div className="herosection-content py-20 text-center">
                 <h1 className="text-primary">
-                  Bieber - React Personal Portfolio Template
+                  Portfolio - Mohammed Rafique
                 </h1>
                 <p className="lead">
-                  Bieber is a creative personal portfolio React template build
-                  with NextJS and TailwindCSS.
+                  Mohammed is a creative full stack developer working with NodeJS, ReactJS, NestJS, NextJS, MongoDB, PSQL, Docker and Blockchain.
                 </p>
                 <ScrollLink
                   activeClass="active"
