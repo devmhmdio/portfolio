@@ -112,8 +112,8 @@ const AboutSection = () => {
               </li>
             )}
           </ul>
-          <a href="/resume.pdf" className="btn mt-3">
-            <span>Download Resume</span>
+          <a href="tel:+919039831784" className="btn mt-3">
+            <span>Connect With Me</span>
           </a>
         </motion.div>
       </div>

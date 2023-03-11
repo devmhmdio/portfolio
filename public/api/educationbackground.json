@@ -2,22 +2,22 @@
     {
         "id": 1,
         "title": "Higher School Graduation",
-        "meta": "Abc College.",
+        "meta": "M.S.B. Educational Institute, Indore",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.",
-        "year": "2008 - 2010"
+        "year": "2014 - 2016"
     },
     {
         "id": 2,
-        "title": "Bachelor of Sciences",
-        "meta": "Def University.",
+        "title": "Bachelor of Business Administration (IT)",
+        "meta": "Institute of management Studies, D.A.V.V.",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.",
-        "year": "2010 - 2014"
+        "year": "2016 - 2019"
     },
     {
         "id": 3,
-        "title": "Masters of Sciences",
-        "meta": "Def University.",
+        "title": "Masters of Business Administration (IT)",
+        "meta": "Institute of management Studies, D.A.V.V.",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.",
-        "year": "2014 - 2016"
+        "year": "2019 - 2021"
     }
 ]

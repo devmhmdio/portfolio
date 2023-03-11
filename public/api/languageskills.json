@@ -16,27 +16,27 @@
     },
     {
         "id": 4,
-        "title": "React Native",
-        "percentage": 70
+        "title": "MongoDB",
+        "percentage": 80
     },
     {
         "id": 5,
-        "title": "Html & Css",
-        "percentage": 95
+        "title": "AWS",
+        "percentage": 85
     },
     {
         "id": 6,
-        "title": "Photoshop",
-        "percentage": 75
+        "title": "PSQL/MySQL",
+        "percentage": 85
     },
     {
         "id": 7,
-        "title": "Illustrator",
-        "percentage": 70
+        "title": "Blockchain",
+        "percentage": 75
     },
     {
         "id": 8,
-        "title": "Figma",
-        "percentage": 90
+        "title": "Micro Services",
+        "percentage": 70
     }
 ]
