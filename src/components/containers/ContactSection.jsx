@@ -24,8 +24,7 @@ const ContactSection = () => {
         <div className="contact-information">
           <h4>Contact Information</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis,
-            iusto harum possimus non praesentium qui facere.
+          Whether you have a project idea in mind, need help with an existing project, or just want to say hello, please don't hesitate to reach out.
           </p>
           <span className="inline-block h-1 w-20 rounded-full bg-primary bg-opacity-20"></span>
           <div className="contact-blocks mt-5 space-y-5">
@@ -66,7 +65,9 @@ const ContactSection = () => {
               <div className="content">
                 <h5 className="mb-2">Contact address</h5>
                 <p className="mb-0">
-                  121 King Street, Melbourne, United States
+                  <Link href={`https://goo.gl/maps/QLbARZ9sbZBHhowo7`}>
+                      <p className="no-underline">130B, Hasanji Nagar, Indore, Madhya Pradesh 453331</p>
+                    </Link>
                 </p>
               </div>
             </div>
