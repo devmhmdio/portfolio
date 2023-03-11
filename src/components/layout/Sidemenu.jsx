@@ -41,9 +41,10 @@ const Sidemenu = ({ fullMenu, fullMenuHandler }) => {
           <span className="whitespace-nowrap">
             &copy; {new Date().getFullYear()}{" "}
           </span>
+          &nbsp;
           <Link href="/">
             <span className="block font-medium text-heading no-underline hover:text-primary lg:inline">
-              NuclearThemes
+              Mohammed Rafique
             </span>
           </Link>
         </p>
